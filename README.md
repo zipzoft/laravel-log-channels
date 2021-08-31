@@ -9,7 +9,7 @@ composer require zipzoft/laravel-log-channels
 ### Elasticsearch Channel
 Required
 ```
-"elasticsearch/elasticsearch": "^7.3"
+"zipzoft/laravel-elasticsearch-client": "^1.0.0"
 ```
 Add channel to config/logging.php
 ```php
