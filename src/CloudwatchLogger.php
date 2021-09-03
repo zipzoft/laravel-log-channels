@@ -104,6 +104,6 @@ class CloudwatchLogger
      */
     protected function resolveStreamName(array $config)
     {
-        return $config['name'] . '.' . $this->app->environment().'.'. Carbon::now()->format('Y-m-d-h-i');
+        return $config['name'] . '.' . $this->app->environment().'.'. Carbon::now()->format('Y-m-d_H-i');
     }
 }
