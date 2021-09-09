@@ -90,6 +90,10 @@ class InstallCommand extends Command
     private function cloudwatchInstaller()
     {
         return function () {
+            if (! class_exists('Aws\CloudWatchLogs\CloudWatchLogsClient')) {
+                $this->requireComposerPackages(['--with-all-dependencies', 'aws/aws-sdk-php=~3.0']);
+            }
+
             $this->requireComposerPackages("maxbanton/cwh");
         };
     }
