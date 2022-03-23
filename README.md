@@ -1,10 +1,14 @@
 ## Laravel Log Channels
 
-Error log channel เพิ่มเติมสำหรับ Laravel
+Log channel เพิ่มเติมสำหรับ Laravel สำหรับบางกรณีที่คุณต้องการ channel เพิ่มเติมเพื่อเขียน log 
 
-สำหรับบางกรณีที่คุณต้องการ channel เพิ่มเติมเพื่อเขียน log เช่น
+Channel ที่เรามีตอนนี้
 
-Elasticsearch, AWS CloudWatch, ...
+| Channel | |
+| :-- | :-: |
+| Elasticsearch | :white_check_mark: |
+| AWS CloudWatch | :white_check_mark: |
+
 
 ## ติดตั้ง
 ```
@@ -12,6 +16,7 @@ composer require zipzoft/laravel-log-channels
 ```
 
 
+--- 
 
 
 ## Channel ต่างๆ
